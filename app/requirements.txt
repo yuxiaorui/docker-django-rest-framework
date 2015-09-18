@@ -4,4 +4,3 @@ django-allauth
 django-rest-auth
 django-cache-machine
 django-rest-swagger
-django-send-messages
