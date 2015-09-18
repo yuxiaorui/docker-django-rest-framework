@@ -1,6 +1,6 @@
 django
 djangorestframework
 django-allauth
-django-rest-auth
+django-rest-auth<0.5
 django-cache-machine
 django-rest-swagger
