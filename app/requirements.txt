@@ -1,8 +1,11 @@
-django
+django~=1.8.0
 djangorestframework
 django-allauth
 django-rest-auth<0.5
 django-cache-machine
 django-rest-swagger
+django-crispy-forms~=1.4.0
+django-reversion~=1.8.3
 python-memcached
+six>=1.1.0
 uuid
