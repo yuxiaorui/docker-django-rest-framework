@@ -16,6 +16,8 @@ RUN ln -s /opt/django/django.conf /etc/nginx/sites-enabled/
 RUN ln -s /opt/django/supervisord.conf /etc/supervisor/conf.d/
 
 RUN pip install -r /opt/django/app/requirements.txt
+RUN pip install git+https://github.com/sshwsfc/django-xadmin@django1.8
+RUN pip install git+https://github.com/django/django@1.8.7
 RUN pip install git+https://github.com/hwbuluo/django-send-messages.git
 
 VOLUME ["/opt/django/app"]
