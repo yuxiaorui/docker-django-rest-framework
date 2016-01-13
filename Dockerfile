@@ -3,7 +3,7 @@ MAINTAINER Yu XiaoRui <yxiaorui2012@gmail.com>
 RUN (echo "deb http://mirrors.ustc.edu.cn/debian/ jessie main contrib non-free" > /etc/apt/sources.list && echo "deb http://mirrors.ustc.edu.cn/debian/ jessie-updates main contrib non-free" >> /etc/apt/sources.list && echo "deb http://mirrors.ustc.edu.cn/debian-security/ jessie/updates main contrib non-free" >> /etc/apt/sources.list)
 RUN apt-get update && apt-get upgrade -y
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential git python python-dev python-setuptools nginx sqlite3 supervisor libmysqld-dev libjpeg62-turbo-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential git python python-dev python-setuptools nginx sqlite3 supervisor libmysqld-dev libjpeg62-turbo-dev libfreetype6-dev libxft-dev  libjpeg62  libjpeg-dev
 RUN easy_install pip
 RUN pip install uwsgi
 RUN pip install mysql
