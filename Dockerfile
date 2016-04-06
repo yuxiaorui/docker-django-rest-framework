@@ -18,7 +18,7 @@ RUN set -x \
 		libjpeg-dev \
 	' \
 	&& DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*
-RUN pip install uwsgi
+RUN pip install uwsgi \
 	&& pip install mysql
 
 ADD . /opt/django/
