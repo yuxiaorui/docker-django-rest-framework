@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Yu XiaoRui <yxiaorui2012@gmail.com>
 
-RUN DEBIAN_FRONTEND=noninteractive set -x \
+RUN set -x \
 	&& buildDeps=' \
 		build-essential \
 		git \
@@ -18,7 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive set -x \
 		libjpeg62 \
 		libjpeg-dev \
 	' \
-	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*
+	&& DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*
 RUN easy_install pip
 RUN pip install uwsgi
 	&& pip install mysql
