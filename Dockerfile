@@ -13,7 +13,7 @@ RUN set -x \
 		supervisor \
 		libmysqld-dev \
 		libjpeg62-turbo-dev \
-		libfreetype6-dev 
+		libfreetype6-dev \
 		libxft-dev \
 		libjpeg62 \
 		libjpeg-dev \
