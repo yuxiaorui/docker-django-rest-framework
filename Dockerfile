@@ -16,6 +16,7 @@ RUN set -x \
 		libxft-dev \
 		libjpeg62 \
 		libjpeg-dev \
+		netcat-traditional \
 	' \
 	&& DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/*
 RUN pip install uwsgi \
