@@ -11,7 +11,6 @@ django-rest-auth~=0.6
 django-rest-swagger
 django-reversion~=1.8.3
 django-simple-captcha==0.5.1
-django-mongoengine
 MySQL-python==1.2.5
 python-memcached
 six>=1.1.0
