@@ -32,6 +32,7 @@ RUN ln -s /opt/django/supervisord.conf /etc/supervisor/conf.d/
 RUN pip install git+https://github.com/sshwsfc/django-xadmin@django1.8
 RUN pip install git+https://github.com/django/django@1.8.7
 RUN pip install git+https://github.com/hwbuluo/django-send-messages.git
+RUN pip install git+https://github.com/MongoEngine/django-mongoengine.git
 RUN pip install -r /opt/django/app/requirements.txt
 
 RUN apt-get clean
