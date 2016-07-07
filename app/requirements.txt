@@ -7,7 +7,7 @@ django-allauth~=0.24
 django-cache-machine
 django-crispy-forms~=1.4.0
 django-qiniu-storage==2.3.0
-django-rest-auth~=0.6
+django-rest-auth==0.6.0
 django-rest-swagger
 django-reversion~=1.8.3
 django-simple-captcha==0.5.1
