@@ -14,3 +14,4 @@ kombu
 redis
 six>=1.1.0
 uuid
+pingpp
