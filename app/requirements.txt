@@ -5,4 +5,7 @@ django-rest-auth<0.5
 django-cache-machine
 django-rest-swagger
 python-memcached
+celery
+kombu
+redis
 uuid
