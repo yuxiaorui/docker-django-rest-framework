@@ -8,6 +8,7 @@ django-qiniu-storage==2.3.0
 django-rest-auth==0.6.0
 django-rest-swagger~=0.3.8
 django-redis
+drf-extensions
 MySQL-python==1.2.5
 python-memcached
 celery
